@@ -58,7 +58,7 @@ const SobreMi: React.FC = () => {
   const projects = [
     {
       name: 'DonaUAM',
-      description: 'Sistema de donaciones universitarias con IA para conectar estudiantes necesitados con donantes generosos',
+      description: 'Sistema de donaciones universitarias con IA',
       github: 'https://github.com/maxitodev/DonaUAM',
       website: 'https://donauam.maxitodev.com',
       qr: '/QR/donauamqr.png',
