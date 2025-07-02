@@ -128,15 +128,6 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      {/* Supervisors Information - Bottom Left */}
-      <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 xl:bottom-12 2xl:bottom-6 left-2 sm:left-4 md:left-6 lg:left-8 xl:left-12 2xl:left-6 z-20 bg-black/40 backdrop-blur-lg rounded-lg sm:rounded-xl md:rounded-2xl 2xl:rounded-xl p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-4 border border-white/30 max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md 2xl:max-w-sm">
-        <h4 className="text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-base mb-1 sm:mb-2 md:mb-3 2xl:mb-2 font-['Inter',_'system-ui',_sans-serif] tracking-wide">Supervisores del Proyecto</h4>
-        <div className="space-y-0.5 sm:space-y-1 md:space-y-2 2xl:space-y-1 text-white/95">
-          <p className="font-medium text-[10px] sm:text-xs md:text-sm lg:text-base 2xl:text-sm font-['Inter',_'system-ui',_sans-serif] leading-tight">Dra. María del Carmen Gómez Fuentes</p>
-          <p className="font-medium text-[10px] sm:text-xs md:text-sm lg:text-base 2xl:text-sm font-['Inter',_'system-ui',_sans-serif] leading-tight">Dr. Jorge Cervantes Ojeda</p>
-        </div>
-      </div>
-
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(particleCount)].map((_, i) => (
