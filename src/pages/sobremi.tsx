@@ -231,10 +231,10 @@ const SobreMi: React.FC = () => {
               {projects.map((project) => (
                 <div 
                   key={project.name}
-                  className="group relative bg-black/40 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+                  className="group relative bg-black/40 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl flex flex-col h-full"
                 >
                   {/* Project header */}
-                  <div className="mb-4 sm:mb-6">
+                  <div className="mb-4 sm:mb-6 flex-grow">
                     <div className={`inline-block bg-gradient-to-r ${project.gradient} text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4`}>
                       <span className="text-white">Proyecto Destacado</span>
                     </div>
@@ -269,7 +269,7 @@ const SobreMi: React.FC = () => {
                   </div>
 
                   {/* Action buttons */}
-                  <div className="space-y-2 sm:space-y-3">
+                  <div className="space-y-2 sm:space-y-3 mt-auto">
                     <a
                       href={project.website}
                       target="_blank"
