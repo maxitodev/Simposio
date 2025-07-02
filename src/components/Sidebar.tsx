@@ -120,14 +120,19 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage = '', onToggle }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed top-3 right-3 z-[9999] bg-white/10 backdrop-blur-md text-white p-1.5 rounded-md border border-white/30 transition-all duration-300 transform hover:scale-105 hover:bg-white/20"
-        style={{ zIndex: 9999 }}
+        style={{ 
+          zIndex: 9999,
+          color: '#ffffff',
+          backgroundColor: 'rgba(255, 255, 255, 0.1)'
+        }}
       >
         <svg 
-          className="w-4 h-4 transition-all duration-300" 
+          className="w-4 h-4 transition-all duration-300 text-white" 
           fill="none" 
           stroke="currentColor" 
           viewBox="0 0 24 24"
           strokeWidth={2.5}
+          style={{ color: '#ffffff' }}
         >
           {isOpen ? (
             <path 
@@ -155,6 +160,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage = '', onToggle }) => {
           backdrop-blur-xl border-l-4 ${theme.border} shadow-2xl
           transform transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+          text-white
         `}
         style={{ 
           zIndex: 9997,
@@ -164,7 +170,8 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage = '', onToggle }) => {
           height: '100vh',
           width: '320px',
           display: 'block',
-          visibility: 'visible'
+          visibility: 'visible',
+          color: '#ffffff'
         }}
       >
         {/* Header */}
@@ -199,6 +206,10 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage = '', onToggle }) => {
                         : `text-white/80 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20`
                       }
                     `}
+                    style={{
+                      color: isActive ? '#ffffff' : 'rgba(255, 255, 255, 0.8)',
+                      backgroundColor: isActive ? undefined : 'transparent'
+                    }}
                   >
                     <div className={`
                       flex-shrink-0 transition-all duration-300
@@ -206,14 +217,20 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage = '', onToggle }) => {
                         ? 'text-white' 
                         : 'text-white/70 group-hover:text-white'
                       }
-                    `}>
+                    `}
+                    style={{
+                      color: isActive ? '#ffffff' : 'rgba(255, 255, 255, 0.7)'
+                    }}>
                       {item.icon}
                     </div>
                     
                     <span className={`
                       font-['Inter',_'system-ui',_sans-serif] text-lg
-                      ${isActive ? 'text-white font-semibold' : ''}
-                    `}>
+                      ${isActive ? 'text-white font-semibold' : 'text-white'}
+                    `}
+                    style={{
+                      color: '#ffffff'
+                    }}>
                       {item.name}
                     </span>
 

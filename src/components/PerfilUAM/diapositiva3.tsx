@@ -9,8 +9,8 @@ const ArrowLeftIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const ExternalLinkIcon = ({ className }: { className?: string }) => (
-  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+const ExternalLinkIcon = ({ className, style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg className={className} style={style} fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
   </svg>
 );
@@ -158,9 +158,18 @@ const PerfilUAMDiapositiva3: React.FC = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30"
-                style={{ color: 'white' }}
+                style={{ 
+                  color: '#ffffff',
+                  textDecoration: 'none'
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = '#ffffff';
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = '#ffffff';
+                }}
               >
-                <ExternalLinkIcon className="w-5 h-5 mr-2" />
+                <ExternalLinkIcon className="w-5 h-5 mr-2" style={{ color: '#ffffff' }} />
                 Visitar PerfilUAM
               </a>
               
