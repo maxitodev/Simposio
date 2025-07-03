@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# Simposio DMAS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Simposio DMAS** es una plataforma web para la presentación y difusión de proyectos destacados realizados por estudiantes del Departamento de Matemáticas Aplicadas y Sistemas (DMAS) de la UAM Cuajimalpa. Esta edición presenta los proyectos **PerfilUAM** y **DonaUAM**, enfocados en el fortalecimiento profesional, la colaboración y la solidaridad dentro de la comunidad universitaria.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivo
 
-## Expanding the ESLint configuration
+Brindar un espacio de exposición y divulgación para proyectos estudiantiles innovadores, facilitando el intercambio de ideas y la vinculación entre estudiantes, académicos y actores externos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Proyectos Presentados
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 1. [PerfilUAM](https://perfiluam.maxitodev.com/)
+Permite a estudiantes de Ingeniería en Computación y Matemáticas Aplicadas crear y publicar sus currículums, competencias, datos de contacto y tesinas/proyectos terminales. Facilita la proyección profesional y el contacto con empleadores y la comunidad universitaria.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Ventajas principales:**
+- Difusión del talento estudiantil y sus proyectos terminales.
+- Apoyo a la inserción laboral.
+- Promoción del intercambio académico y profesional.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. [DonaUAM](https://donauam.maxitodev.com/)
+Sistema de donativos que ayuda a evitar el desperdicio de recursos, promoviendo la cultura de ayuda mutua. Permite donar y solicitar objetos útiles dentro de la comunidad, facilitando el contacto y el intercambio responsable.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Beneficios destacados:**
+- Fomento de la solidaridad y el apoyo entre miembros de la comunidad.
+- Prolongación de la vida útil de objetos funcionales.
+- Gestión eficiente y transparente de donativos.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Tecnologías Utilizadas
+
+- **Frontend:** Vite, React, TypeScript, Tailwind CSS, GSAP
+
+---
+
+## Equipo
+
+- **Presentación y desarrollo:** Max Uriel Sánchez Díaz
+---
+
+## Sitio Web
+
+Accede a la presentación web del simposio:  
+[https://simposio.maxitodev.com/](https://simposio.maxitodev.com/)
+
+---
+
+## Créditos
+
+- **Max Uriel Sánchez Díaz** – Desarrollo y presentación
+- **César Jovani Rodríguez De Jesús** – Idea original de DonaUAM
+
+---
+
+*Simposio DMAS – Presentación Web de Proyectos Estudiantiles*
